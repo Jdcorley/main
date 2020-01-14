@@ -1,9 +1,8 @@
 <header>
   <h1>Welcome, <%= current_user.email %></h1>
-  <h2>We're using <%= Rails.version %> </h2>
+  <h2>We're using <%= Rails.version %></h2>
 </header>
 <section>
-  <p>
-    Amazing Modern Dashboard
-  </p>
+  <p>Amazing Modern Dashboard</p>
+  <%= link_to "Log out", destroy_user_session_path, method: :delete %>
 </section>
